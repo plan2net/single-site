@@ -1,0 +1,27 @@
+{
+  "name": "plan2net/single-site",
+  "license": "GPL-3.0",
+  "description": "Optimize TYPO3 site handling for a single site installation",
+  "type": "typo3-cms-extension",
+  "keywords": [
+    "TYPO3",
+    "site",
+    "performance"
+  ],
+  "homepage": "https://www.plan2.net/",
+  "authors": [
+    {
+      "name": "Wolfgang Klinger",
+      "role": "Lead Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "typo3/cms-core": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Plan2net\\SingleSite\\": "Classes/"
+    }
+  }
+}
