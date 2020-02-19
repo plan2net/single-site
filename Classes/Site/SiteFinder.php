@@ -19,15 +19,16 @@ class SiteFinder extends \TYPO3\CMS\Core\Site\SiteFinder {
      *
      * @param int $pageId
      * @param array $rootLine
+     * @param string|null $mountPointParameter
      * @return Site
      * @throws SiteNotFoundException
      */
-    public function getSiteByPageId(int $pageId, array $rootLine = null): Site
+    public function getSiteByPageId(int $pageId, array $rootLine = null, string $mountPointParameter = null): Site
     {
         if (count($this->sites) === 1) {
             return current($this->sites);
         }
 
-        return parent::getSiteByPageId($pageId, $rootLine);
+        return parent::getSiteByPageId($pageId, $rootLine, $mountPointParameter);
     }
 }
