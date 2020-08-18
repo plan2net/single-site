@@ -9,10 +9,10 @@ $EM_CONF[$_EXTKEY] = [
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
     'author_company' => 'plan2net GmbH',
-    'version' => '1.1.0',
+    'version' => '1.1.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.14-9.5.99'
+            'typo3' => '9.5.14-10.4.99'
         ]
     ]
 ];

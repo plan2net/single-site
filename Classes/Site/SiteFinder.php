@@ -18,7 +18,7 @@ class SiteFinder extends \TYPO3\CMS\Core\Site\SiteFinder {
      * otherwise search for a site by going up the root line
      *
      * @param int $pageId
-     * @param array $rootLine
+     * @param array|null $rootLine
      * @param string|null $mountPointParameter
      * @return Site
      * @throws SiteNotFoundException
