@@ -23,5 +23,10 @@
     "psr-4": {
       "Plan2net\\SingleSite\\": "Classes/"
     }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "single_site"
+    }
   }
 }
