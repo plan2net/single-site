@@ -1,4 +1,5 @@
 # single-site
+
 Optimize TYPO3 site handling for a single site installation
 
 ## What does it do?
@@ -11,7 +12,7 @@ You have only one site (one domain) in your installation and want the best perfo
 Then you need this extension. 
 It increases overall performance by 13% (or if you need a concrete number: in my test installation around 200ms per request).
 
-# Installation
+## Installation
 
 Just install it and you're done.
 

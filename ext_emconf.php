@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['single_site'] = [
     'title' => 'Single site',
     'description' => 'Optimize TYPO3 site handling for a single site installation',
     'category' => 'be',
@@ -9,10 +9,10 @@ $EM_CONF[$_EXTKEY] = [
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
     'author_company' => 'plan2net GmbH',
-    'version' => '1.1.2',
+    'version' => '1.2.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.14-10.4.99'
+            'typo3' => '9.5.14-11.5.99'
         ]
     ]
 ];
