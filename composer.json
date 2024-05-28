@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": ">=7.2",
-    "typo3/cms-core": "~9.5.14 || ^10.4 || ^11.5"
+    "typo3/cms-core": "~9.5.14 || ^10.4 || ^11.5 || ^12.4"
   },
   "autoload": {
     "psr-4": {
@@ -27,6 +27,12 @@
   "extra": {
     "typo3/cms": {
       "extension-key": "single_site"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
     }
   }
 }
