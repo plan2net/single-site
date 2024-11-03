@@ -12,7 +12,7 @@ use TYPO3\CMS\Core\Site\Entity\Site;
  *
  * @author Wolfgang Klinger <wk@plan2.net>
  */
-class SiteFinder extends \TYPO3\CMS\Core\Site\SiteFinder
+readonly class SiteFinder extends \TYPO3\CMS\Core\Site\SiteFinder
 {
     /**
      * Return a Site instance if there is only one site configured,
@@ -22,8 +22,9 @@ class SiteFinder extends \TYPO3\CMS\Core\Site\SiteFinder
      */
     public function getSiteByPageId(int $pageId, array $rootLine = null, string $mountPointParameter = null): Site
     {
-        if (1 === count($this->sites)) {
-            return current($this->sites);
+        $sites = $this->getAllSites();
+        if (1 === count($sites)) {
+            return current($sites);
         }
 
         return parent::getSiteByPageId($pageId, $rootLine, $mountPointParameter);

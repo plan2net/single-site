@@ -12,7 +12,7 @@ $EM_CONF['single_site'] = [
     'version' => '1.3.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.14-12.4.99'
+            'typo3' => '13.4.0-13.4.99'
         ]
     ]
 ];
