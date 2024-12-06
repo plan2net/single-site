@@ -9,10 +9,11 @@ $EM_CONF['single_site'] = [
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
     'author_company' => 'plan2net GmbH',
-    'version' => '1.3.0',
+    'version' => '1.4.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.14-12.4.99'
+            'typo3' => '13.4.1-13.4.99',
+            'php' => '8.2.0-8.4.99'
         ]
     ]
 ];

@@ -1,7 +1,7 @@
 {
   "name": "plan2net/single-site",
   "license": "GPL-3.0",
-  "description": "Optimize TYPO3 site handling for a single site installation",
+  "description": "Optimize TYPO3 Site handling for a single Site installation",
   "type": "typo3-cms-extension",
   "keywords": [
     "TYPO3",
@@ -16,8 +16,8 @@
     }
   ],
   "require": {
-    "php": ">=7.2",
-    "typo3/cms-core": "~9.5.14 || ^10.4 || ^11.5 || ^12.4"
+    "php": ">=8.2",
+    "typo3/cms-core": "^13.4"
   },
   "autoload": {
     "psr-4": {
